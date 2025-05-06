@@ -1,15 +1,46 @@
 /* css/style.css */
 
-/* Style for the profile picture */
+/* Keep the base style for profile picture if you want it available elsewhere, otherwise remove */
+/*
 .profile-picture {
-    width: 250px; /* Initial size - adjust as needed */
-    height: 250px; /* Set explicit height to maintain aspect ratio with width */
-    object-fit: cover; /* Ensures the image covers the area without distortion */
-    margin: 20px auto; /* Top/bottom margin, auto left/right for centering block element */
-    /* border: 5px solid #fff; /* Optional: Add a white border */
-    /* box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); /* Optional: Add a subtle shadow */
+    width: 250px; height: 250px; object-fit: cover;
+    margin: 20px auto;
+}
+*/
+
+
+/* --- Styles for Colors --- */
+nav { background-color: #617E8C; }
+body { background-color: #66D3C0; }
+.page-footer.teal, .page-footer { background-color: #617E8C !important; }
+.page-footer .container h5, .page-footer .container a { color: #ffffff !important; }
+
+
+/* --- Styles for Standard Carousel --- */
+
+/* Style the standard carousel container */
+.profile-carousel {
+    margin: 20px auto; /* Add some margin around the carousel */
+    width: 80%; /* Set a width relative to the container - ADJUST THIS */
+    max-width: 600px; /* Set a maximum width - ADJUST THIS */
+    height: 300px; /* **Set a specific height** for the carousel - ADJUST THIS */
+    /* Removed margin-top/bottom specific to full-width */
 }
 
+/* Adjust images within the standard carousel items */
+.profile-carousel .carousel-item img {
+    object-fit: cover; /* Ensure image covers the area without distortion */
+    height: 100%; /* Make image take full height of its container */
+    width: 100%; /* Make image take full width of its container */
+}
+
+/* Style for the profile area below the carousel */
+/* Adjust margin-top to create space between the carousel and the intro section */
+.profile-area {
+     margin-top: 40px; /* Add space above the intro section - ADJUST THIS */
+     margin-bottom: 40px; /* Add space below */
+
+}
 
 
 /* --- Styles for Colors --- */
