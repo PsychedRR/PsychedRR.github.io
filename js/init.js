@@ -11,7 +11,7 @@
     var profileArea = $('.profile-area'); // Get the container area
     var introText = $('.profile-area .flow-text'); // Get the intro paragraph
 
-    var scrollThreshold = 200; // Adjust how many pixels you scroll before the effect triggers
+    var scrollThreshold = 20; // Adjust how many pixels you scroll before the effect triggers
     var scrolledClass = 'scrolled'; // A class we'll add to the body
 
     // Listen for the scroll event on the window

@@ -31,4 +31,34 @@ body.scrolled .profile-area .flow-text {
 }
 
 
-/* Add more custom styles here */
+/* --- New Styles for Colors --- */
+
+/* Style for the Navigation Bar (Top Banner) */
+/* This overrides the default Materialize color class */
+nav.light-blue.lighten-1, /* Target the nav with its default color class for specificity */
+nav { /* Also target nav generally */
+    background-color: #617E8C !important; /* Use !important to ensure override */
+}
+
+/* Style for the Main Page Background */
+/* Apply to the body element */
+body {
+    background-color: #66D3C0;
+}
+
+/* You might want the footer to match the header or be a neutral color */
+/* Footer currently uses 'teal'. You can change it here or by removing the 'teal' class in HTML */
+.page-footer.teal { /* Target footer with its default color class */
+     background-color: #617E8C !important; /* Example: Make footer match header */
+     /* Or maybe a slightly different shade: background-color: #55707C !important; */
+     /* Or a neutral color: background-color: #f5f5f5 !important; */
+}
+
+/* Adjust text color on the footer if background changes significantly */
+.page-footer .container h5,
+.page-footer .container a {
+     color: #ffffff !important; /* Ensure text is readable on dark background */
+}
+
+
+/* Add more custom styles here as needed */
