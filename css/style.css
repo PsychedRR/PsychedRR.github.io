@@ -6,58 +6,51 @@
     height: 250px; /* Set explicit height to maintain aspect ratio with width */
     object-fit: cover; /* Ensures the image covers the area without distortion */
     margin: 20px auto; /* Top/bottom margin, auto left/right for centering block element */
-    transition: all 0.3s ease-in-out; /* Smooth transition for size changes */
     /* border: 5px solid #fff; /* Optional: Add a white border */
     /* box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); /* Optional: Add a subtle shadow */
 }
 
-/* Style for the profile picture when the body has the 'scrolled' class */
-/* The picture will shrink slightly when scrolled past the threshold */
-body.scrolled .profile-picture {
-    width: 150px; /* New smaller size - adjust as needed */
-    height: 150px;
-    margin-top: 0; /* Reduce top margin when scrolled */
-    margin-bottom: 10px; /* Adjust bottom margin */
+
+
+/* --- Styles for Colors --- */
+nav { background-color: #617E8C; }
+body { background-color: #66D3C0; }
+.page-footer.teal, .page-footer { background-color: #617E8C !important; }
+.page-footer .container h5, .page-footer .container a { color: #ffffff !important; }
+
+
+/* Style the carousel container */
+.profile-carousel {
+    margin: 20px auto; /* Add some margin around the carousel */
+    width: 80%; /* Adjust width as needed - use percentage or max-width */
+    max-width: 400px; /* Set a maximum width */
+    /* height: 300px; /* Optional: Set a fixed height and adjust object-fit on images */
 }
 
-/* Optional: Style the intro text when scrolled */
-body.scrolled .profile-area h1,
-body.scrolled .profile-area h5,
-body.scrolled .profile-area .flow-text {
-    font-size: smaller; /* Make text slightly smaller */
-    /* margin-top: 5px; */
-    /* margin-bottom: 5px; */
-    transition: all 0.3s ease-in-out; /* Smooth transition for text */
+/* Style the images within the carousel items */
+.profile-carousel .carousel-item img {
+    object-fit: cover; /* Ensures images cover the area without distortion */
+     /* If you set a fixed height on the carousel, set height: 100%; here */
+     /* height: 100%; */
 }
 
-
-/* --- New Styles for Colors --- */
-
-/* Style for the Navigation Bar (Top Banner) */
-/* This overrides the default Materialize color class */
-nav.light-blue.lighten-1, /* Target the nav with its default color class for specificity */
-nav { /* Also target nav generally */
-    background-color: #617E8C !important; /* Use !important to ensure override */
-}
 
 /* Style for the Main Page Background */
-/* Apply to the body element */
 body {
     background-color: #66D3C0;
 }
 
-/* You might want the footer to match the header or be a neutral color */
-/* Footer currently uses 'teal'. You can change it here or by removing the 'teal' class in HTML */
-.page-footer.teal { /* Target footer with its default color class */
-     background-color: #617E8C !important; /* Example: Make footer match header */
-     /* Or maybe a slightly different shade: background-color: #55707C !important; */
-     /* Or a neutral color: background-color: #f5f5f5 !important; */
+/* Style for the Footer */
+/* Target footer directly or by its old class if you didn't remove it in HTML */
+.page-footer.teal,
+.page-footer {
+     background-color: #617E8C !important; /* Keep !important if 'teal' class is still there, or if other footer styles are specific */
 }
 
-/* Adjust text color on the footer if background changes significantly */
+/* Adjust text color on the footer */
 .page-footer .container h5,
 .page-footer .container a {
-     color: #ffffff !important; /* Ensure text is readable on dark background */
+     color: #ffffff !important;
 }
 
 
