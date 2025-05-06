@@ -1,0 +1,34 @@
+/* css/style.css */
+
+/* Style for the profile picture */
+.profile-picture {
+    width: 250px; /* Initial size - adjust as needed */
+    height: 250px; /* Set explicit height to maintain aspect ratio with width */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    margin: 20px auto; /* Top/bottom margin, auto left/right for centering block element */
+    transition: all 0.3s ease-in-out; /* Smooth transition for size changes */
+    /* border: 5px solid #fff; /* Optional: Add a white border */
+    /* box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); /* Optional: Add a subtle shadow */
+}
+
+/* Style for the profile picture when the body has the 'scrolled' class */
+/* The picture will shrink slightly when scrolled past the threshold */
+body.scrolled .profile-picture {
+    width: 150px; /* New smaller size - adjust as needed */
+    height: 150px;
+    margin-top: 0; /* Reduce top margin when scrolled */
+    margin-bottom: 10px; /* Adjust bottom margin */
+}
+
+/* Optional: Style the intro text when scrolled */
+body.scrolled .profile-area h1,
+body.scrolled .profile-area h5,
+body.scrolled .profile-area .flow-text {
+    font-size: smaller; /* Make text slightly smaller */
+    /* margin-top: 5px; */
+    /* margin-bottom: 5px; */
+    transition: all 0.3s ease-in-out; /* Smooth transition for text */
+}
+
+
+/* Add more custom styles here */

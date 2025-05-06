@@ -1,145 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Robin Yuechen Ren - Personal Webpage</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            padding: 20px;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #77b300 3px solid;
-        }
-        header a {
-            color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-        header ul {
-            padding: 0;
-            list-style: none;
-            text-align: center;
-        }
-        header li {
-            display: inline;
-            padding: 0 20px 0 20px;
-        }
-        header #branding {
-            float: left;
-        }
-        header #branding h1 {
-            margin: 0;
-        }
-        section {
-            padding: 20px;
-            background: #fff;
-            margin-bottom: 10px;
-        }
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            margin-top: 20px;
-        }
-        img {
-            max-width: 150px;
-            border-radius: 50%;
-        }
-    </style>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>Robin Yuechen Ren - PhD Student</title> <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div id="branding">
-                <h1>Robin Ren</h1>
+
+    <nav class="light-blue lighten-1" role="navigation">
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="index.html" class="brand-logo">Your Name</a> <ul class="right hide-on-med-and-down">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="others.html">Others</a></li>
+            </ul>
+
+            <ul id="nav-mobile" class="sidenav">
+                 <li><a href="index.html">Home</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="others.html">Others</a></li>
+            </ul>
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="section">
+
+           <div class="center-align profile-area"> <a href="cv.html"> <img id="profile-img" class="responsive-img circle profile-picture" src="images/my_profile_picture.jpg" alt="Your Name Profile Picture"> </a>
+
+                <h1>Robin Ren</h1> <h5 class="light">PhD Student at Eyethink Lab, University College London</h5> <p class="light flow-text"> 'Hello Viewer' (If you know James May you know what this is). I'm a PhD student in Experimental Psychology. My main research looks at audience engagement, and we use heart rate synchrony to quantify this multidimensional concept. More grounded, I'm interested in how do social contexts influence audience engagament. Imagine watching a theatre play in the actual theatre, and its livestreamed version at home alone. Almost everyone (within 95% confidence interval/ or credible interval if you are a bayesian) would say the actual theatre experience is better. And we wanted to know why? Our answer lies in social context, that I believe, from personal experience and previous research, the emotions, behvaiours, responses from the audience around us endow the collective experience a certain uniqueness that manifested in audience engagement. Outside of research, I am a 'lifelong' supporter of Man United, huge fan of cinema and theatres, I just enjoy a well-delivered narrative! 
+                </p>
+                </div>
+
+            <div class="divider"></div> <div class="row">
+                <div class="col s12 m6">
+                    <h3>Research Interests</h3>
+                    <p>List your primary research areas here using bullet points or a short paragraph.</p>
+                </div>
+                 <div class="col s12 m6">
+                    <h3>Latest News / Updates</h3>
+                    <p>Mention a recent publication, conference attendance, or project milestone.</p>
+                </div>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#research">Research</a></li>
-                    <li><a href="#publications">Publications</a></li>
-                    <li><a href="#talks">Talks</a></li>
-                    <li><a href="#hobbies">Hobbies</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-    <section id="about">
-        <div class="container">
-            <img src="profile.png" alt="Robin Ren">
-            <h2>About Me</h2>
-            <p>Hello my digital visitor, my name is Robin, some also knows me as Yuechen depending on which area of the world you get to know me from, but hey they are both me, albeit might have slightly different personalities - cue some language and cognition research here! I am currently a first year PhD student at UCL Experimental Psychology programme.</p>
-        </div>
-    </section>
 
-    <section id="research">
-        <div class="container">
-            <h2>Research</h2>
-            <p>My research focuses on audience engagement at collective experiences using the means of physiological synchrony and by manipulating the social identity of audiences.</p>
-        </div>
-    </section>
 
-    <section id="publications">
-        <div class="container">
-            <h2>Publications</h2>
-            <ul>
-                <li>Publication 1</li>
-                <li>Publication 2</li>
-                <li>Publication 3</li>
-            </ul>
-        </div>
-    </section>
+            </div>
+        <br><br> </div>
 
-    <section id="talks">
-        <div class="container">
-            <h2>Talks</h2>
-            <ul>
-                <li>Talk 1</li>
-                <li>Talk 2</li>
-                <li>Talk 3</li>
-            </ul>
+    <footer class="page-footer teal"> <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Your Name</h5> <p class="grey-text text-lighten-4">Brief description or contact info summary.</p>
+                </div>
+                <div class="col l4 offset-l2 s12"> <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li> <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li> </ul>
+                </div>
+            </div>
         </div>
-    </section>
+        <div class="footer-copyright">
+            <div class="container">
+                © <span id="current-year"></span> Your Name <a class="grey-text text-lighten-4 right" href="#!">More Links</a> </div>
+        </div>
+    </footer>
 
-    <section id="hobbies">
-        <div class="container">
-            <h2>Hobbies and Creations</h2>
-            <ul>
-                <li>Hobby or Creation 1</li>
-                <li>Hobby or Creation 2</li>
-                <li>Hobby or Creation 3</li>
-            </ul>
-        </div>
-    </section>
 
-    <section id="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:placeholder@example.com">placeholder@example.com</a></p>
-            <p>Lab Website: <a href="http://labwebsite.com">http://labwebsite.com</a></p>
-            <p>UCL Profile: <a href="http://uclprofile.com">http://uclprofile.com</a></p>
-            <p>Twitter: <a href="http://twitter.com/yourhandle">@yourhandle</a></p>
-        </div>
-    </section>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/init.js"></script>
+    <script>
+        // Optional: Script to automatically update the year in the footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
 
     <footer>
         <p>&copy; 2024 Robin Yuechen Ren. All rights reserved.</p>
