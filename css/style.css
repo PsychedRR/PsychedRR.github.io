@@ -11,7 +11,7 @@
 
 /* --- Styles for Colors --- */
 nav { background-color: #617E8C; }
-body { background-color: #66D3C0; }
+body { background-color: #96DED1; }
 .page-footer.teal, .page-footer { background-color: #617E8C !important; }
 .page-footer .container h5, .page-footer .container a { color: #ffffff !important; }
 
@@ -29,7 +29,7 @@ body { background-color: #66D3C0; }
 
 /* Adjust images within the standard carousel items */
 .profile-carousel .carousel-item img {
-    object-fit: cover; /* Ensure image covers the area without distortion */
+    object-fit: contain; /* Ensure image covers the area without distortion */
     height: 100%; /* Make image take full height of its container */
     width: 100%; /* Make image take full width of its container */
 }
@@ -45,7 +45,7 @@ body { background-color: #66D3C0; }
 
 /* --- Styles for Colors --- */
 nav { background-color: #617E8C; }
-body { background-color: #66D3C0; }
+body { background-color: #96DED1; }
 .page-footer.teal, .page-footer { background-color: #617E8C !important; }
 .page-footer .container h5, .page-footer .container a { color: #ffffff !important; }
 
@@ -68,7 +68,7 @@ body { background-color: #66D3C0; }
 
 /* Style for the Main Page Background */
 body {
-    background-color: #66D3C0;
+    background-color: #96DED1;
 }
 
 /* Style for the Footer */
